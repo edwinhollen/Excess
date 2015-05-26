@@ -4,7 +4,7 @@
 
     <groupId>org.edwinhollen.excess</groupId>
     <artifactId>excess</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>1.0</version>
 
     <dependencies>
         <dependency>
