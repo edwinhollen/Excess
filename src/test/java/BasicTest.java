@@ -1,8 +1,7 @@
 package test.java;
 
 import org.junit.Assert;
-import main.java.*;
-import main.java.System;
+import edwinhollen.excess.System;
 import org.junit.Test;
 
 import java.util.Arrays;

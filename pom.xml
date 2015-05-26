@@ -16,7 +16,7 @@
 
     <developers>
         <developer>
-            <id>edwinhollen</id>
+            <id>main</id>
             <name>Edwin Hollen</name>
             <url>https://github.com/edwinhollen</url>
         </developer>
@@ -77,7 +77,7 @@
                     <branch>refs/heads/mvn-repo</branch>
                     <includes><include>**/*</include></includes>
                     <repositoryName>Excess</repositoryName>
-                    <repositoryOwner>edwinhollen</repositoryOwner>
+                    <repositoryOwner>main</repositoryOwner>
                 </configuration>
                 <executions>
                     <execution>
