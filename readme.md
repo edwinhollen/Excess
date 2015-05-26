@@ -2,6 +2,28 @@
 
 Excess is a component-entity system for Java. It takes advantage of some Java 8 features, such as parallel streams, and lambdas. 
 
+## Installation
+
+Using Maven: 
+
+    <repositories>
+        <repository>
+            <id>jitpack.io</id>
+            <url>https://jitpack.io</url>
+        </repository>
+    <repositories>
+
+    <dependencies>
+        ...
+        <dependency>
+            <groupId>com.github.edwinhollen</groupId>
+            <artifactId>Excess</artifactId>
+            <version>1.0.1</version>
+        </dependency>
+    </dependencies>
+    
+The version corresponds to any GitHub release. [See releases.](https://github.com/edwinhollen/Excess/releases)
+
 ## Usage example
 
     // define a component or two
