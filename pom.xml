@@ -48,7 +48,7 @@
     </properties>
 
     <build>
-        <sourceDirectory>${basedir}/src/edwinhollen/excess</sourceDirectory>
+        <sourceDirectory>src/</sourceDirectory>
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
