@@ -1,5 +1,6 @@
-package test.java;
-
+import edwinhollen.excess.Component;
+import edwinhollen.excess.Entity;
+import edwinhollen.excess.Excess;
 import org.junit.Assert;
 import edwinhollen.excess.System;
 import org.junit.Test;
