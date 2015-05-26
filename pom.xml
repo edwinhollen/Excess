@@ -16,6 +16,14 @@
         </dependency>
     </dependencies>
 
+    <developers>
+        <developer>
+            <id>edwinhollen</id>
+            <name>Edwin Hollen</name>
+            <url>https://github.com/edwinhollen</url>
+        </developer>
+    </developers>
+
     <build>
         <sourceDirectory>src</sourceDirectory>
         <plugins>
