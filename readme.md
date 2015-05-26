@@ -38,11 +38,12 @@ Excess is a component-entity system for Java. It takes advantage of some Java 8 
     excess.addSystem(new PhysicsSystem());
     
     // add entities
-    excess.addEntity(Arrays.asList(new PositionComponent());
-    excess.addEntity(Arrays.asList(new VelocityComponent());
-    // both of the above entities will be rejected by PhysicsSystem,
-    // the below entity will be accepted by PhysicsSystem
-    excess.addEntity(Arrays.asList(new PositionComponent(), new VelocityComponent()));
+    // entities simply hold a list of components
+    excess.addEntity(new Entity(Arrays.asList(new PositionComponent()));
+    excess.addEntity(new Entity(Arrays.asList(new VelocityComponent()));
+    excess.addEntity(new Entity(Arrays.asList(new PositionComponent(), new VelocityComponent())));
+    // the first two entities will be rejected by PhysicsSystem,
+    // the third entity will be accepted
     
     // let Excess organize entities into the systems
     // returns a map of systems and a list of their respective entities
