@@ -2,6 +2,7 @@ package edwinhollen.excess;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.function.Function;
 import java.util.stream.Collectors;
 
 /**
@@ -24,7 +25,7 @@ public class Entity{
     }
     public List<Class<? extends Component>> getComponentsAsClasses(){
         return this.components.parallelStream()
-                .map(component -> component.getClass())
+                .map((Function<Component, Class<? extends Component>>) (component) -> component.getClass())
                 .collect(Collectors.toList());
     }
 }

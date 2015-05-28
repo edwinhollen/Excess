@@ -15,8 +15,7 @@ public class Excess {
 
     public Map<System, List<Entity>> getOrganizedEntities(){
         Map<System, List<Entity>> returnMap = new HashMap<>();
-        systems.parallelStream().forEach(system -> returnMap.put(system, entities.parallelStream()
-            //.filter(entity -> system.getAcceptedComponents().containsAll(entity.getComponentsAsClasses()))
+        systems.stream().forEachOrdered(system -> returnMap.put(system, entities.stream()
             .filter(entity -> entity.getComponentsAsClasses().containsAll(system.getAcceptedComponents()))
             .collect(Collectors.toList())
         ));
