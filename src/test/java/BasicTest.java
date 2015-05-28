@@ -1,10 +1,7 @@
-import edwinhollen.excess.Component;
-import edwinhollen.excess.Entity;
-import edwinhollen.excess.Excess;
-import org.junit.Assert;
+import edwinhollen.excess.*;
 import edwinhollen.excess.System;
+import org.junit.Assert;
 import org.junit.Test;
-
 import java.util.Arrays;
 import java.util.List;
 import java.util.Map;
@@ -32,7 +29,7 @@ public class BasicTest {
         excess.addEntity(new Entity(Arrays.asList(new BComponent(), new CComponent())));
 
         // organize entities
-        Map<System, List<Entity>> organized = excess.getOrganizedEntities();
+        Map<edwinhollen.excess.System, List<Entity>> organized = excess.getOrganizedEntities();
 
         Assert.assertEquals(organized.get(abcSystem).size(), 1);
     }
